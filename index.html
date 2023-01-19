@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/input.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Todo list</title>
+</head>
+
+<body class="py-24 bg-indigo-700 h-screen">
+    
+    <div class="flex flex-col mx-auto h-96 w-96 bg-slate-50 rounded-2xl drop-shadow-md  ">
+        <div class="bg-gradient-to-t from-cyan-500 to-blue-600 w-full h-24 rounded-t-2xl ">
+            <h1 class="mx-auto text-2xl text-center flex justify-center uppercase  font-bold text-slate-50 py-8 ">
+                TO-DO-LIST 😉📋
+            </h1>
+        </div>
+        <form action="" class="mx-auto my-2">
+            <input type="text" name="" id="search" placeholder="add task"
+                class="w-32 mx-auto mt-2 rounded-l-xl drop-shadow-md">
+            <input type="submit" id='send' value="Send"
+                class="-ml-1 bg-gradient-to-b from-cyan-500 to-blue-600 rounded-r-xl px-2 text-slate-50 font-bold">
+                <p class=" msgError hidden">Maximum 18 lettres 😡</p>
+        </form>
+        <div class="flex">
+
+            <ul class="overflow-y-auto overflow-x-hidden h-52" id="myLists">
+            </ul>
+           <div>
+        </div>
+    </div>
+    <button
+       class="mt-12 rounded-full bg-gradient-to-t from-cyan-500 to-blue-500 w-32 text-slate-50 font-bold mx-auto flex justify-center align-center mt-2"
+       id="clear">Clear Task(s)</button>
+ </div>
+<script src='script.js'></script>
+</body>
+
+</html>
