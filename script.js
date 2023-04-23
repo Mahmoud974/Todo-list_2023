@@ -133,6 +133,7 @@ const oneList = (e) => {
 };
 
 form.addEventListener("submit", oneList);
+
 /**
  * Afficher la data stocker depuis le localStorage
  */
@@ -141,7 +142,6 @@ const recordData = () => {
     tabTasksData
       .sort((a, b) => a.apply_for_date - b.apply_for_date)
       .map((displayTheTask, index) => {
-        console.log(index);
         elements = createElements();
         setClassNames(elements);
         setText(elements, displayTheTask.apply_for_date, displayTheTask.myTask);
@@ -161,3 +161,5 @@ document.querySelectorAll(".delete_task").forEach((several_tasks) => {
     e.target.closest("li").remove();
   });
 });
+let arr = [{ go: "yo" }, [1, 5]].flat();
+console.log(arr);
